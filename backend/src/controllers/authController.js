@@ -2,6 +2,7 @@ import User from '../models/User.js';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
+import {uploadOnCloudinary} from "../utils/cloudinary.js";
 dotenv.config();
 
 export const signup = async (req, res) => {
@@ -9,11 +10,16 @@ export const signup = async (req, res) => {
         const { channelName, email, phone, password } = req.body;
         if(await User.findOne({email:email})) {
             return res.status(500).json({"message": "User already exists"});
-        }else{
-
+        }
+        const local = req.file?.path
+        console.log(local)
+        const result =await uploadOnCloudinary(local)
+        console.log(result)
+        if(!result){
+            return res.status(500).json({"message": "Logo Upload failed"});
         }
         const hashedPassword = await bcrypt.hash(password, 10);
-        const newUser = new User({ channelName, email, phone, password: hashedPassword });
+        const newUser = new User({ channelName, email, phone, password: hashedPassword, logo:result.url });
         await newUser.save();
         return res.status(201).json({ message: 'User created successfully' });
     } catch (error) {
