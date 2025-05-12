@@ -1,20 +1,26 @@
 // src/App.jsx
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home.jsx";
+import "./App.css"
+import React, {useContext} from "react";
+import { Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard.jsx";
 import SignUp from "./pages/SignUp.jsx";
+import {useAppContext} from "./contexts/Context.jsx";
+import Login from "./pages/Login.jsx";
+import Feed from "./pages/Feed.jsx";
 
 
 const App = () => {
+    const {isLoggedIn } = useAppContext();
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<SignUp/>}/>
-                {/*<Route path="/video/:id" element={<VideoDetail />} />*/}
-                {/*<Route path="/login" element={<Login />} />*/}
-                {/*<Route path="*" element={<NotFound />} />*/}
-            </Routes>
-        </Router>
+        <Routes>
+            <Route path="/" element={isLoggedIn? <Feed/> : <Login/>}/>
+            {/*<Route path="/cat" element={<Category/>}/>*/}
+            <Route path="/dashboard" element={<Dashboard/>}/>
+            <Route path="/" element={<Dashboard/>}/>
+            {/*<Route path="/video/:id" element={<VideoDetail />} />*/}
+            {/*<Route path="/login" element={<Login />} />*/}
+            {/*<Route path="*" element={<NotFound />} />*/}
+        </Routes>
     );
 };
 

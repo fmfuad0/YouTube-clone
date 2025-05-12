@@ -1,14 +1,21 @@
 import Video from '../models/Video.js';
+import {uploadOnCloudinary} from "../utils/cloudinary.js";
 
 export const uploadVideo = async (req, res) => {
     try {
-        const { video_url, thumbnail_url, category, tags } = req.body;
+        console.log(req.body)
+        const {title, description } = req.body;
+        const video= req.files.video?.[0].path;
+        const thumbnail= req.files.thumbnail?.[0].path;
+        const video_url = (await uploadOnCloudinary(video)).secure_url
+        const thumbnail_url = (await uploadOnCloudinary(thumbnail)).secure_url
+        console.log("id : ", req.user)
         const newVideo = new Video({
-            user_id: req.user.id,
+            user_id: req.user._id,
             video_url,
             thumbnail_url,
-            category,
-            tags,
+            title,
+            description,
         });
         await newVideo.save();
         res.status(201).json(newVideo);

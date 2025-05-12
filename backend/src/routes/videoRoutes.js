@@ -10,12 +10,23 @@ import {
     getVideosByTag,
 } from '../controllers/videoController.js';
 import {authMiddleware} from '../middlewares/authMiddleware.js';
+import {upload} from "../middlewares/multerMiddleware.js";
 
 const videoRouter = express.Router();
 
 
 // videoRouter.route('/').get((req, res) => {res.json("Video")});
-videoRouter.route('/upload').post(authMiddleware, uploadVideo);
+videoRouter
+    .route('/upload')
+    .post(
+        authMiddleware,
+        upload.fields([
+            { name: 'video'},
+            { name: 'thumbnail'}
+        ]),
+        uploadVideo
+    );
+
 videoRouter.route('/update/:id').put(authMiddleware, updateVideo);
 videoRouter.route('/delete/:id').delete(authMiddleware, deleteVideo);
 videoRouter.route('/').get(getAllVideos);
