@@ -9,7 +9,10 @@ import commentRouter from "./routes/commentRoutes.js";
 import videoRouter from "./routes/videoRoutes.js";
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: 'http://localhost:5173', // frontend origins allowed
+    credentials: true
+}));
 app.use(express.json({ limit: "16kb" }));
 app.use(express.urlencoded({ extended: true })); // Add extended: true here
 app.use(express.static("public"));

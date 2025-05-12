@@ -5,31 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="948d7eec-cc97-4297-9706-42c3dbe321eb" name="Changes" comment="...">
-      <change afterPath="$PROJECT_DIR$/frontend/assets/clean-house_3672338.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/video_1179120.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/world_4277307.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/youtube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Topbar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/UploadVideo.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/contexts/Context.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/authController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/controllers/videoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/videoController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/middlewares/authMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/middlewares/authMiddleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/middlewares/multerMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/middlewares/multerMiddleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/models/Video.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/models/Video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/routes/videoRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/videoRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/utils/cloudinary.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/utils/cloudinary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/contexts/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ListVideos.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Feed.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/SignUp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/SignUp.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/UploadVideo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/UploadVideo.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +33,7 @@
     <dismissed value="$PROJECT_DIR$/frontend/package.json" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -112,7 +90,7 @@
       <workItem from="1746982551609" duration="603000" />
       <workItem from="1746984399362" duration="5029000" />
       <workItem from="1746996517607" duration="9665000" />
-      <workItem from="1747078709354" duration="11472000" />
+      <workItem from="1747078709354" duration="12776000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <option name="closed" value="true" />
@@ -162,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746988151599</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="...">
+      <option name="closed" value="true" />
+      <created>1747090723165</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747090723165</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

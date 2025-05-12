@@ -6,7 +6,7 @@ function UploadVideo() {
     const [description, setDescription] = useState('');
     const [video, setVideo] = useState(undefined);
     const [thumbnail, setThumbnail] = useState(undefined);
-    const {server} = useAppContext
+    const {server} = useAppContext()
     const handleSubmit =async (e) => {
         e.preventDefault();
         // Handle form submission logic here
@@ -15,16 +15,17 @@ function UploadVideo() {
         formData.append('description', description);
         formData.append('video', video);
         formData.append('thumbnail', thumbnail);
-        const res = await fetch(`${server}/video/upload`, {
+        const url = `${server}/video/upload`;
+        console.log(url)
+        const res = await fetch(url, {
             method: 'POST',
             body: formData,
-            headers: {
-                'Content-Type': 'multipart/form-data',
-            }
         })
         if(res.ok){
             window.alert("Video uploaded")
         }else{
+            const errorText = await res.text();
+            console.log("Upload failed:", errorText);
             window.alert("Video not uploaded")
         }
     };
