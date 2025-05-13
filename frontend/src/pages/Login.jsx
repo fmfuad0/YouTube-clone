@@ -5,7 +5,7 @@ import {useAppContext} from "../contexts/Context.jsx";
 function Login(props) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const {setUser, setIsLoggedIn} = useAppContext();
+    const {setUser, setIsLoggedIn, setToken} = useAppContext();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -22,6 +22,7 @@ function Login(props) {
         console.log(data);
         setUser(data.user);
         setIsLoggedIn(true);
+        setToken(data.token);
     };
 
     return (

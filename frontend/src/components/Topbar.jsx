@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import {useAppContext} from "../contexts/Context.jsx";
 
 const categories = [
     "All", "Music", "Live", "Gaming", "News", "Sports", "Comedy", "Technology",
@@ -9,6 +10,7 @@ const categories = [
 const TopBar = () => {
     const [active, setActive] = useState("All");
     const scrollRef = useRef(null);
+    const {navigate} = useAppContext();
 
     // Enable vertical mouse wheel to scroll the category bar horizontally
     useEffect(() => {
@@ -49,8 +51,8 @@ const TopBar = () => {
 
                 {/* User Icons */}
                 <div className="flex items-center gap-4">
-                    <img src="/assets/upload.png" alt="Upload" className="h-6 cursor-pointer" />
-                    <img src="/assets/world_4277307.png" alt="User" className="h-8 w-8 rounded-full border border-gray-500 cursor-pointer" />
+                    <button onClick={()=>navigate('/dashboard')} className={`cursor-pointer`}>DASHBOARD</button>
+                    <img src="../../assets/world_4277307.png" alt="User" className="h-8 w-8 rounded-full border border-gray-500 cursor-pointer" />
                 </div>
             </div>
 

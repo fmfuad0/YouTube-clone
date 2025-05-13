@@ -6,7 +6,8 @@ function UploadVideo() {
     const [description, setDescription] = useState('');
     const [video, setVideo] = useState(undefined);
     const [thumbnail, setThumbnail] = useState(undefined);
-    const {server} = useAppContext()
+    const [visible, setVisible] = useState("hidden");
+    const {server, token} = useAppContext()
     const handleSubmit =async (e) => {
         e.preventDefault();
         // Handle form submission logic here
@@ -17,10 +18,16 @@ function UploadVideo() {
         formData.append('thumbnail', thumbnail);
         const url = `${server}/video/upload`;
         console.log(url)
+        console.log(token)
+        setVisible("")
         const res = await fetch(url, {
             method: 'POST',
             body: formData,
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
         })
+        setVisible("hidden")
         if(res.ok){
             window.alert("Video uploaded")
         }else{
@@ -34,7 +41,7 @@ function UploadVideo() {
         <div className="flex items-center justify-center px-4">
             <form
                 onSubmit={handleSubmit}
-                className="w-full max-w-2xl p-20 bg-gray-900 rounded-lg shadow-lg flex flex-col items-center gap-5"
+                className="w-full max-w-2xl py-3 px-20 bg-gray-900 rounded-lg shadow-lg flex flex-col items-center gap-5"
             >
                 <h1 className="font-extrabold text-white text-2xl tracking-widest">UPLOAD VIDEO</h1>
 
@@ -52,7 +59,7 @@ function UploadVideo() {
                     onChange={(e) => setDescription(e.target.value)}
                 />
 
-                <div className="flex flex-col sm:flex-row sm:items-center gap-4 w-full">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-4 w-full overflow-hidden">
                     <label className="text-white font-semibold w-32">Video:</label>
                     <input
                         type="file"
@@ -62,7 +69,7 @@ function UploadVideo() {
                     />
                 </div>
 
-                <div className="flex flex-col sm:flex-row sm:items-center gap-4 w-full">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-4 w-full overflow-hidden">
                     <label className="text-white font-semibold w-32">Thumbnail:</label>
                     <input
                         type="file"
@@ -76,7 +83,7 @@ function UploadVideo() {
                     <img
                         src={URL.createObjectURL(thumbnail)}
                         alt="Thumbnail Preview"
-                        className="w-24 h-24 object-cover rounded mt-2"
+                        className=" object-cover rounded mt-2 scale-75"
                     />
                 )}
 
@@ -86,6 +93,7 @@ function UploadVideo() {
                 >
                     UPLOAD
                 </button>
+                <span className={`loader scale-60 ${visible}`}></span>
             </form>
         </div>
     );
