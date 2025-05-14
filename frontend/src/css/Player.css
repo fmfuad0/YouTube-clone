@@ -1,0 +1,68 @@
+/* Player.css */
+.video-player-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0 0;
+    background: black;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-js.vjs-youtube-theme {
+    font-family: Arial, sans-serif;
+    color: red;
+    background-color: #000;
+}
+
+.video-js .vjs-control-bar {
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    padding: 0 10px;
+    bottom: 0;
+    height: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    transition: opacity 0.3s;
+}
+
+.video-js:hover .vjs-control-bar {
+    opacity: 1;
+}
+
+.video-js .vjs-play-control,
+.video-js .vjs-volume-panel,
+.video-js .vjs-current-time,
+.video-js .vjs-time-divider,
+.video-js .vjs-duration,
+.video-js .vjs-fullscreen-control {
+    color: white;
+}
+
+.video-js .vjs-progress-holder {
+    background: #444;
+    height: 5px;
+}
+
+.video-js .vjs-play-progress {
+    background: red;
+}
+
+.video-js .vjs-slider {
+    background-color: white;
+}
+
+/* Big play button like YouTube */
+.video-js .vjs-big-play-button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 3em;
+    color: white;
+    transition: background 0.3s;
+}
+
+.video-js .vjs-big-play-button:hover {
+    background: rgba(255, 0,0);
+    /*background: rgba(255, 255, 255, 0.2);*/
+}

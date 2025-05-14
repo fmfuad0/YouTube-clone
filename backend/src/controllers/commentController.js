@@ -2,7 +2,8 @@ import Comment from '../models/Comment.js';
 
 export const addComment = async (req, res) => {
     try {
-        const { video_id, commentText } = req.body;
+        const {video_id} = req.params;
+        const {commentText } = req.body;
         const newComment = new Comment({
             video_id,
             commentText,
@@ -36,7 +37,7 @@ export const deleteComment = async (req, res) => {
 
 export const getCommentsByVideo = async (req, res) => {
     try {
-        const comments = await Comment.find({ video_id: req.params.videoId });
+        const comments = await Comment.find({video_id: req.params.videoId });
         res.json(comments);
     } catch (error) {
         res.status(500).json({ error: error.message });

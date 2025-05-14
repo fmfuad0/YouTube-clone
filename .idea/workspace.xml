@@ -5,12 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="948d7eec-cc97-4297-9706-42c3dbe321eb" name="Changes" comment="!!">
+      <change afterPath="$PROJECT_DIR$/frontend/assets/6401074.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/circle-down-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-download-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-like-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-save-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-search-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-search-50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-share-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-three-dots-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-three-dots-48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-three-dots-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/pngegg(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/thumbs-down-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/thumbs-up-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/user_icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Category.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ListComments.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Player.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SuggestedVideos.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/VideoDescription.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/css/Player.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/VideoPlayer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/controllers/commentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/commentController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/routes/commentRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/commentRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ListVideos.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ListVideos.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Topbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Topbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/UploadVideo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/UploadVideo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/contexts/Context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/contexts/Context.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Feed.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Feed.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +122,8 @@
       <workItem from="1746996517607" duration="9665000" />
       <workItem from="1747078709354" duration="15328000" />
       <workItem from="1747094400359" duration="8000" />
+      <workItem from="1747162238790" duration="26128000" />
+      <workItem from="1747229385345" duration="2155000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <option name="closed" value="true" />
