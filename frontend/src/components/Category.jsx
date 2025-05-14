@@ -32,7 +32,7 @@ function Category(props) {
     return (
         <div
             ref={scrollRef}
-            className="fixed top-[52px] left-0 w-full flex overflow-x-auto px-4 py-2 bg-[#0f0f0f] text-white z-40 space-x-2 no-scrollbar "
+            className="fixed top-[49px] left-0 w-full flex overflow-x-auto px-4 py-2.5 bg-[#0f0f0f] text-white z-40 space-x-2 no-scrollbar "
         >
             {categories.map((category, idx) => (
                 <button

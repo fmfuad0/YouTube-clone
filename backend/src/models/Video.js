@@ -11,10 +11,12 @@ const videoSchema = new mongoose.Schema({
     tags: [String],
     likes: Number,
     dislikes: Number,
-    views: Number,
+    views: String,
     likedBy: [String],
     dislikedBy: [String],
     viewedBy: [String],
+    uploaded:String,
+    channelInfo:{}
 }, {timestamps: true});
 
 export default mongoose.model('Video', videoSchema);

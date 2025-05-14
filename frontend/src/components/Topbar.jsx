@@ -1,6 +1,5 @@
 import React from 'react';
 import { useAppContext } from '../contexts/Context.jsx';
-import Category from "./Category.jsx";
 
 const TopBar = () => {
     const { navigate } = useAppContext();
@@ -23,9 +22,9 @@ const TopBar = () => {
                     <input
                         type="text"
                         placeholder="Search"
-                        className="w-full px-4 py-1.5 bg-[#121212] border border-[#3e3e3e] rounded-l-full focus:outline-none text-sm text-white placeholder-gray-400"
+                        className="w-full px-4 py-1 bg-[#121212] border border-[#3e3e3e] rounded-l-full focus:outline-none text-sm text-white placeholder-gray-400"
                     />
-                    <button className="bg-[#272727] px-4 py-1.5 border border-[#3e3e3e] cursor-pointer border-l-0 rounded-r-full hover:bg-[#3a3a3a]">
+                    <button className="bg-[#272727] px-4 py-1 border border-[#3e3e3e] cursor-pointer border-l-0 rounded-r-full hover:bg-[#3a3a3a]">
                         <img src="../../assets/icons8-search-100.png" alt="Search" className="h-6" />
                     </button>
                 </div>

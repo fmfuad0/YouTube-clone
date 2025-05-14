@@ -1,7 +1,6 @@
 import React from 'react';
 import TopBar from "../components/Topbar.jsx";
 import Player from "../components/Player.jsx";
-import {videos} from "../components/ListVideos.jsx";
 import SuggestedVideos from "../components/SuggestedVideos.jsx";
 import VideoDescription from "../components/VideoDescription.jsx";
 import ListComments from "../components/ListComments.jsx";
@@ -70,9 +69,6 @@ function VideoPlayer(props) {
                     </div>
                     <VideoDescription/>
                     <ListComments/>
-                    {videos.map((video, index) => (
-                        <div className={`w-full border`} key={index}>{video.title}</div>
-                    ))}
                 </div>
                 <div className="w-full">
                     <SuggestedVideos/>
