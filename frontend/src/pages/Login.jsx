@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useState} from 'react';
 import {ToastContainer, toast} from "react-toastify";
 import {useAppContext} from "../contexts/Context.jsx";
 
@@ -22,7 +22,7 @@ function Login(props) {
         console.log(data);
         setUser(data.user);
         setIsLoggedIn(true);
-        setToken(data.token);
+        localStorage.setItem('token', data.token)
     };
 
     return (

@@ -8,9 +8,9 @@ const TopBar = () => {
     return (
         <>
             {/* Top Navigation Bar */}
-            <div className="fixed top-0 left-0 w-full flex items-center justify-between px-4 py-2 bg-[#0f0f0f] text-white z-50">
+            <div className="fixed top-0left-0 w-full flex items-center justify-between px-4 py-2 bg-[#0f0f0f] text-white z-50">
                 {/* Logo */}
-                <div className="flex items-center gap-1">
+                <div className="flex items-center  cursor-pointer  gap-1" onClick={(e)=>navigate("/")}>
                     <img src="../../assets/video.png" className="h-6" alt="logo" />
                     <h1 className="font-semibold text-lg tracking-tight">
                         NEW<span className="text-[#FF0000] ml-1">TUBE</span>

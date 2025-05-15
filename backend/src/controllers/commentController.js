@@ -1,13 +1,17 @@
 import Comment from '../models/Comment.js';
+import User from "../models/User.js";
+import mongoose from "mongoose";
+
 
 export const addComment = async (req, res) => {
     try {
         const {video_id} = req.params;
         const {commentText } = req.body;
+        const userInfo = await User.findById(new mongoose.Types.ObjectId(req.user._id)).select("channelName logo")
         const newComment = new Comment({
             video_id,
             commentText,
-            user_id: req.user.id,
+            userInfo
         });
         await newComment.save();
         res.status(201).json(newComment);
@@ -37,7 +41,8 @@ export const deleteComment = async (req, res) => {
 
 export const getCommentsByVideo = async (req, res) => {
     try {
-        const comments = await Comment.find({video_id: req.params.videoId });
+        const comments = await Comment.find({video_id: req.params.videoId }).sort({ date: -1 });
+        console.log(comments);
         res.json(comments);
     } catch (error) {
         res.status(500).json({ error: error.message });

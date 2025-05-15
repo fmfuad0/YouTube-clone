@@ -1,68 +1,50 @@
-/* Player.css */
-.video-player-wrapper {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    margin: 0 0;
-    background: black;
-    border-radius: 12px;
-    overflow: hidden;
-}
+/* youtube-style.css */
 
-.video-js.vjs-youtube-theme {
-    font-family: Arial, sans-serif;
-    color: red;
+.video-js {
+    font-family: 'Roboto', Arial, sans-serif;
     background-color: #000;
+    color: #f50000;
 }
 
 .video-js .vjs-control-bar {
-    background: rgba(0, 0, 0, 0.5);
-    font-size: 13px;
-    padding: 0 10px;
-    bottom: 0;
-    height: 45px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    transition: opacity 0.3s;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
 }
 
-.video-js:hover .vjs-control-bar {
-    opacity: 1;
+.video-js .vjs-big-play-button {
+    background-color: #ff0000;
+    border-radius: 50%;
+    top: 50% !important;
+    left: 50% !important;
+    margin-left: -40px !important;
+    margin-top: -40px !important;
+    transition: background-color 0.3s ease;
 }
 
-.video-js .vjs-play-control,
-.video-js .vjs-volume-panel,
-.video-js .vjs-current-time,
-.video-js .vjs-time-divider,
-.video-js .vjs-duration,
-.video-js .vjs-fullscreen-control {
-    color: white;
+.vjs-big-play-button:hover {
+    background: #e60000;
 }
 
 .video-js .vjs-progress-holder {
+    height: 3px;
+    border-radius: 3px;
     background: #444;
-    height: 5px;
 }
 
 .video-js .vjs-play-progress {
-    background: red;
+    background: #ff0000 !important;
+    border-radius: 3px;
 }
 
-.video-js .vjs-slider {
-    background-color: white;
+.video-js .vjs-volume-level {
+    background: #ff0000 !important;
 }
 
-/* Big play button like YouTube */
-.video-js .vjs-big-play-button {
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    font-size: 3em;
-    color: white;
-    transition: background 0.3s;
+.video-js .vjs-fullscreen-control {
+    color: #fff;
+    transition: color 0.3s ease;
 }
 
-.video-js .vjs-big-play-button:hover {
-    background: rgba(255, 0,0);
-    /*background: rgba(255, 255, 255, 0.2);*/
+.video-js .vjs-fullscreen-control:hover {
+    color: #ff0000;
 }

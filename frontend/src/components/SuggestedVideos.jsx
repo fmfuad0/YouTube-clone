@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 // import {videos} from "./ListVideos.jsx";
 import {useAppContext} from "../contexts/Context.jsx";
 function SuggestedVideos(props) {
-    const {server} = useAppContext()
+    const {server, navigate} = useAppContext()
     const [videos, setVideos] = useState([]);
     useEffect(() => {
         const getVideos = async () => {
@@ -19,26 +19,33 @@ function SuggestedVideos(props) {
             {/*    <h1 className={`text-4xl`}>Suggested</h1>*/}
             {/*</div>*/}
             <div className={`flex flex-col gap-1`}>
-                {videos.map((video, index) => {
-                    console.log(video)
+                {videos.map((video) => {
+                    // console.log(video)
                     return (
-                    <ul>
-                        <li className={`list-none cursor-pointer mb-1`} key={index}>
-                            <div className={`max-w-full flex flex-row items-center `}>
-                                <div className={`px-2 w-[75%] overflow-hidden hover:scale-105`}>
+                    <ul key={video._id} onClick={(e)=> {
+                        e.preventDefault()
+                        console.log(video._id)
+                        navigate(`/watch/${video._id}`);
+                    }}>
+                        <li className={`list-none cursor-pointer mb-1`}>
+                            <div className={`max-w-full flex gap-4 flex-row items-center`}>
+                                <div className={`w-[55%] overflow-hidden hover:scale-105`}>
                                     <img src={video.thumbnail_url} alt="" className={` border-none overflow-hidden rounded w-[100%]`} />
                                 </div>
-                                <div className={`flex flex-col w-full gap-0.8`}>
-                                    <div className={`font-bold text-sm`}>{video.title}</div>
-                                    <div className={`text-gray-400 mb-1 font-semibold text-xs`}>{video.channelInfo.channelName}</div>
+                                <div className={`flex flex-col w-full gap-2 `}>
+                                    <div className={`font-bold text-sm`}>{video.title+" "+video.title}</div>
+                                    <div className={`text-gray-400 mb-1 font-semibold text-xs flex flex-row gap-1`}>
+                                        {video.channelInfo.channelName}
+                                        <img src={`../../assets/icons8-verify-64.png`} className={`h-4`}/>
+                                    </div>
                                     <div className={`flex flex-row text-gray-400 font-semibold text-xs`}>
-                                        <h3>{video.views}</h3>
+                                        <h3>{video.views} Views</h3>
                                         <div>
-                                            <li className={`list-disc text-xs font-semibold  ml-5`}>{video.uploaded}</li>
+                                            <h2 className={`list-disc text-xs font-semibold  ml-4`}><li>{video.uploaded}</li></h2>
                                         </div>
                                     </div>
                                 </div>
-                                <img onClick={(e)=>{}}  className={` max-h-6 cursor-pointer`} src={"../../assets/icons8-three-dots-48.png"}/>
+                                <img alt={""}  className={` max-h-6 cursor-pointer`} src={"../../assets/icons8-three-dots-48.png"}/>
                             </div>
                         </li>
                     </ul>

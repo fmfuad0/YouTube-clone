@@ -1,26 +1,19 @@
 import React, { useRef, useEffect } from 'react';
 import videojs from 'video.js';
+import "../css/Player.css"
 import 'video.js/dist/video-js.css';
-import '../css/Player.css'; // custom styles to override defaults
 
-const Player = ({ options, onReady }) => {
+export const Player = ({ options, onReady }) => {
     const videoRef = useRef(null);
     const playerRef = useRef(null);
 
+    // Initialize Video.js player once
     useEffect(() => {
-        if (!playerRef.current) {
-            const player = videojs(videoRef.current, {
-                ...options,
-                controlBar: {
-                    volumePanel: { inline: false }, // vertical YouTube-style volume
-                    pictureInPictureToggle: false, // hide if not needed
-                }
-            }, () => {
-                onReady && onReady(player);
-            });
+        if (!videoRef.current) return;
 
-            playerRef.current = player;
-        }
+        playerRef.current = videojs(videoRef.current, options, () => {
+            if (onReady) onReady(playerRef.current);
+        });
 
         return () => {
             if (playerRef.current) {
@@ -28,17 +21,24 @@ const Player = ({ options, onReady }) => {
                 playerRef.current = null;
             }
         };
-    }, [options, onReady]);
+    }, []);
+
+    // Update player source when options.sources changes
+    useEffect(() => {
+        if (playerRef.current && options.sources) {
+            playerRef.current.src(options.sources);
+            // Optional: play automatically
+            playerRef.current.play();
+        }
+    }, [options.sources]);
 
     return (
-        <div className="video-player-wrapper">
+        <div data-vjs-player>
             <video
                 ref={videoRef}
-                className="video-js vjs-youtube-theme vjs-big-play-centered"
+                className="video-js vjs-big-play-centered "
                 playsInline
             />
         </div>
     );
 };
-
-export default Player;

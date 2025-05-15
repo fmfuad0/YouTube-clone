@@ -4,40 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="948d7eec-cc97-4297-9706-42c3dbe321eb" name="Changes" comment="!!">
-      <change afterPath="$PROJECT_DIR$/frontend/assets/6401074.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/circle-down-solid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-download-96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-like-96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-save-96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-search-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-search-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-share-96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-three-dots-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-three-dots-48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-three-dots-96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/pngegg(1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/thumbs-down-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/thumbs-up-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/user_icon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Category.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ListComments.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Player.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/SuggestedVideos.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/VideoDescription.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/css/Player.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/VideoPlayer.jsx" afterDir="false" />
+    <list default="true" id="948d7eec-cc97-4297-9706-42c3dbe321eb" name="Changes" comment="..!..">
+      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-verify-64.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/controllers/commentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/commentController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/routes/commentRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/commentRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/controllers/videoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/videoController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/models/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/models/Comment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ListComments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ListComments.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/ListVideos.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ListVideos.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Player.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Player.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/SuggestedVideos.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/SuggestedVideos.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Topbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Topbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/VideoDescription.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/VideoDescription.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/contexts/Context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/contexts/Context.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/css/Player.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/Player.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Feed.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Feed.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/VideoPlayer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/VideoPlayer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,22 +57,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/FM Fuad/Desktop/Project Files/YouTube-clone/frontend/assets&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/FM Fuad/Desktop/Project Files/YouTube-clone/frontend/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\FM Fuad\Desktop\Project Files\YouTube-clone\frontend\assets" />
@@ -124,6 +109,7 @@
       <workItem from="1747094400359" duration="8000" />
       <workItem from="1747162238790" duration="26128000" />
       <workItem from="1747229385345" duration="2155000" />
+      <workItem from="1747283826262" duration="17985000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <option name="closed" value="true" />
@@ -198,6 +184,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="..." />
     <MESSAGE value="!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="!!" />
+    <MESSAGE value="..!.." />
+    <option name="LAST_COMMIT_MESSAGE" value="..!.." />
   </component>
 </project>

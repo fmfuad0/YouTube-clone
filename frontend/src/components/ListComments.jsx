@@ -1,22 +1,54 @@
 import React, {useEffect, useState} from 'react';
 import {useAppContext} from "../contexts/Context.jsx";
 
-const CommentBox = (props) => {
+const ListComments = (props) => {
     const {server} = useAppContext()
     const [visible, setVisible] = useState(false);
     const [commentText, setCommentText] = useState("");
     const [comments, setComments] = useState([]);
-    const [videos, setVideos] = useState([]);
+    const [refresh, setRefresh] = useState(false);
+
+    const handleClick = async (e) => {
+        e.preventDefault();
+        const res = await fetch(`${server}/comment/create/${props.video_id}`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+                "Authorization": `Bearer ${localStorage.getItem("token")}`,
+            },
+            body: JSON.stringify({commentText})
+        })
+        const data = await res.json()
+        console.log(data)
+        if(data)
+            window.alert("Comment successfully created")
+        else
+            window.alert("Comment not created")
+        setCommentText("")
+        setRefresh(!refresh);
+    }
 
     useEffect(() => {
-        const getVideos = async () => {
-            const res = await fetch(`${server}/video`)
+        const getComments = async () => {
+            console.log(localStorage.getItem("token"));
+            const res = await fetch(`${server}/comment/video/${props.video_id}`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json",
+                    "Authorization": `Bearer ${localStorage.getItem("token")}`,
+                }
+
+            })
             const data = await res.json()
             console.log(data)
-            setVideos(data)
+            console.log(data)
+            setComments(data || [])
         }
-        getVideos()
-    }, []);
+        getComments()
+    }, [refresh]);
+
 
     return (
         <>
@@ -36,24 +68,23 @@ const CommentBox = (props) => {
                     <div className={`${visible ? "flex" : "hidden"} justify-end`}>
                         <button
                             className="bg-[#3ea6ff] px-4 py-2 rounded-3xl cursor-pointer text-black font-semibold disabled:opacity-50"
-                            disabled={commentText.trim() === ""}
-                        >
+                            disabled={commentText.trim() === ""} onClick={(e)=>handleClick(e)}>
                             Comment
                         </button>
                     </div>
                 </div>
             </div>
             <div className="flex flex-col w-full">
-                {videos.length}
-                {videos.map(() => (
-                    <div className={`flex flex-row w-full gap-3 p-3 pl-0 justify-end`}>
-                        <img src={""} alt="avatar" className={`h-10 w-10 border rounded-full`} />
-                        <div className="flex flex-col gap-3 w-full">
+                {comments.length}
+                {comments.map((comment) => (comment?.userInfo &&
+                    <div key={comment._id} className={`flex flex-row w-full gap-5 p-3 pl-0 justify-end`}>
+                        <img src={comment.userInfo.logo} alt="avatar" className={`h-10 w-10 border rounded-full`} />
+                        <div className="flex flex-col gap-2 w-full">
                             <div className={`flex flex-row gap-2`}>
-                                <h2 className={`text-sm font-semibold`}>@Username</h2>
+                                <h2 className={`text-sm font-semibold`}>{comment.userInfo.channelName}</h2>
                                 <p className={`text-sm`}>• 1 year ago</p>
                             </div>
-                            <p className={`text-sm`}>{"What is this main thing"} </p>
+                            <p className={`text-sm`}>{comment.commentText} </p>
 
                             <div className={`flex flex-row rounded-3xl max-w-screen`}>
                                 <div className={`flex flex-row items-center rounded-l-3xl py-2 gap-1`}>
@@ -93,4 +124,4 @@ const CommentBox = (props) => {
     );
 };
 
-export default CommentBox;
+export default ListComments;

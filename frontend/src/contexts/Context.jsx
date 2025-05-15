@@ -8,11 +8,10 @@ export const AppProvider = ({ children }) => {
     const navigate = useNavigate();  // No need to wrap in Router
     const [user, setUser] = useState(null);
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [token, setToken] = useState('');
     const server = "https://youtube-clone-6iwf.onrender.com";
 
     return (
-        <AppContext.Provider value={{ user, isLoggedIn, setUser, setIsLoggedIn, navigate, server, token, setToken }}>
+        <AppContext.Provider value={{ user, isLoggedIn, setUser, setIsLoggedIn, navigate, server}}>
             {children}
         </AppContext.Provider>
     );
