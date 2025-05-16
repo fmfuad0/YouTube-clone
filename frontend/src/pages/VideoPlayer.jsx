@@ -92,7 +92,7 @@ function VideoPlayer(props) {
                         <div className={`flex flex-row items-center gap-1 justify-around`}>
                             <div className={`flex flex-row bg-[#212121] rounded-3xl `}>
                                 <div className={`cursor-pointer flex flex-row items-center rounded-l-3xl px-3 py-2 gap-1  hover:bg-[#3d3d3d]`}>
-                                    <img src={"../../assets/icons8-like-96.png"} alt="" className={`w4 h-5`} />
+                                    <img src={"../../assets/icons8-like-96-normal.png"} alt="" className={`w4 h-5`} />
                                     <p className={`text-sm font-bold`}>2.9K</p>
                                 </div>
                                 <div className={`flex flex-row items-center`}>
@@ -100,7 +100,7 @@ function VideoPlayer(props) {
                                 </div>
                                 <div className={`cursor-pointer flex flex-row items-center rounded-r-3xl px-3 py-2 gap-1  hover:bg-[#3d3d3d]`}>
                                     <p className={`text-sm font-bold`}>2.9K</p>
-                                    <img src={"../../assets/icons8-like-96.png"} alt="" className={`w4 h-5 rotate-180`} />
+                                    <img src={"../../assets/icons8-like-96-normal.png"} alt="" className={`w4 h-5 rotate-180`} />
                                 </div>
                             </div>
                             <div className={`cursor-pointer flex flex-row items-center gap-1 bg-[#212121] hover:bg-[#3d3d3d] rounded-3xl px-4 py-2`}>
@@ -124,7 +124,7 @@ function VideoPlayer(props) {
                     <ListComments video_id={video_id} />
                 </div>
                 <div className="w-full">
-                    <SuggestedVideos/>
+                    <SuggestedVideos flexDirection={"col"}/>
                 </div>
             </div>
 

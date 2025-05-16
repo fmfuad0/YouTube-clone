@@ -107,7 +107,7 @@ My blood is pumping, coming to get you, don't take it from me
 function VideoDescription(props) {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className={`w-full cursor-pointer  bg-[#272727] rounded-lg flex flex-col pt-1 p-4 ${isOpen? "h-fit" : "h-[100px]"} overflow-hidden`} onClick={() => setIsOpen(isOpen^true)} >
+        <div className={`w-full cursor-pointer bg-[#272727] shadow-2xl shadow-blue-500/10 rounded-lg flex flex-col pt-1 p-4 ${isOpen? "h-fit" : "h-[100px]"} overflow-hidden`} onClick={() => setIsOpen(isOpen^true)} >
             <h2 className={`font-bold text-white `}>171,979,439 views  Premiered Jun 24, 2022  <span className={`text-gray-400`}>#Sharks #ImagineDragons #Mercury</span></h2>
             <p className={`text-sm font-semibold`}>{description}</p>
             <div>

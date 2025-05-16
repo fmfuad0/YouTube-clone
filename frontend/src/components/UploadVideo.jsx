@@ -7,7 +7,7 @@ function UploadVideo() {
     const [video, setVideo] = useState(undefined);
     const [thumbnail, setThumbnail] = useState(undefined);
     const [visible, setVisible] = useState("hidden");
-    const {server, token} = useAppContext()
+    const {server} = useAppContext()
     const handleSubmit =async (e) => {
         e.preventDefault();
         // Handle form submission logic here
@@ -16,15 +16,13 @@ function UploadVideo() {
         formData.append('description', description);
         formData.append('video', video);
         formData.append('thumbnail', thumbnail);
-        const url = `${server}/video/upload`;
-        console.log(url)
-        console.log(token)
         setVisible("")
-        const res = await fetch(url, {
+        const res = await fetch(`${server}/video/upload`, {
             method: 'POST',
             body: formData,
             headers: {
-                'Authorization': `Bearer ${token}`
+                'cors' : "cors",
+                'Authorization': `Bearer ${localStorage.getItem('token')}`,
             }
         })
         setVisible("hidden")

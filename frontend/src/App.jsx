@@ -7,6 +7,7 @@ import {useAppContext} from "./contexts/Context.jsx";
 import Login from "./pages/Login.jsx";
 import Feed from "./pages/Feed.jsx";
 import VideoPlayer from "./pages/VideoPlayer.jsx";
+import ChannelProfile from "./pages/ChannelProfile.jsx";
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/feed" element={<Feed/>}/>
             <Route path="/dashboard" element={<Dashboard/>}/>
             <Route path="/watch/:video_id" element={<VideoPlayer/>}/>
+            <Route path="/channel/:channel_id" element={<ChannelProfile/>}/>
             {/*<Route path="/video/:id" element={<VideoDetail />} />*/}
             {/*<Route path="/login" element={<Login />} />*/}
             {/*<Route path="*" element={<NotFound />} />*/}

@@ -10,6 +10,8 @@ export const AppProvider = ({ children }) => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const server = "https://youtube-clone-6iwf.onrender.com";
 
+
+
     return (
         <AppContext.Provider value={{ user, isLoggedIn, setUser, setIsLoggedIn, navigate, server}}>
             {children}

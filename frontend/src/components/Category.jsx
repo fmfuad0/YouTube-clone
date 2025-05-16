@@ -32,13 +32,13 @@ function Category(props) {
     return (
         <div
             ref={scrollRef}
-            className="fixed top-[49px] left-0 w-full flex overflow-x-auto px-4 py-2.5 bg-[#0f0f0f] text-white z-40 space-x-2 no-scrollbar "
+            className="fixed w-full flex overflow-x-auto px-4 py-2.5 bg-[#0f0f0f] text-white z-40 space-x-2 no-scrollbar "
         >
             {categories.map((category, idx) => (
                 <button
                     key={idx}
                     onClick={() => setActive(category)}
-                    className={`px-4 py-2        rounded-lg text-xs font-semibold whitespace-nowrap tracking-wide transition-colors duration-200 cursor-pointer
+                    className={`px-4 py-2 rounded-lg text-xs font-semibold whitespace-nowrap tracking-wide transition-colors duration-200 cursor-pointer
                             ${active === category ? "bg-white text-black" : "bg-[#272727] hover:bg-[#3c3c3c]"}`}
                 >
                     {category}

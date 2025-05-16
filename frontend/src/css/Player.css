@@ -1,5 +1,3 @@
-/* youtube-style.css */
-
 .video-js {
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #000;
@@ -21,8 +19,8 @@
     transition: background-color 0.3s ease;
 }
 
-.vjs-big-play-button:hover {
-    background: #e60000;
+.video-js .vjs-big-play-button:hover {
+    color: #e60000;
 }
 
 .video-js .vjs-progress-holder {

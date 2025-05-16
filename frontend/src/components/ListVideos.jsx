@@ -62,7 +62,7 @@ function ListVideos(props) {
                         <div >
                             <h3 className="font-semibold line-clamp-1">{video.title}</h3>
                             <p className="text-sm font-semibold text-gray-400">{video.channelInfo.channelName}</p>
-                            <p className="text-xs font-semibold text-gray-500">{video.views}M Views • {video.uploaded}</p>
+                            <p className="text-xs font-semibold text-gray-500">{video.views} Views • {video.uploaded}</p>
                         </div>
                     </div>
                 </div>

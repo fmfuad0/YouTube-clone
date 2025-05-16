@@ -7,6 +7,8 @@ const ListComments = (props) => {
     const [commentText, setCommentText] = useState("");
     const [comments, setComments] = useState([]);
     const [refresh, setRefresh] = useState(false);
+    const [isliked, setIsliked] = useState(false);
+    const [isDisliked, setIsDisliked] = useState(false);
 
     const handleClick = async (e) => {
         e.preventDefault();
@@ -86,20 +88,24 @@ const ListComments = (props) => {
                             </div>
                             <p className={`text-sm`}>{comment.commentText} </p>
 
-                            <div className={`flex flex-row rounded-3xl max-w-screen`}>
-                                <div className={`flex flex-row items-center rounded-l-3xl py-2 gap-1`}>
-                                    <img src={"../../assets/icons8-like-96.png"} alt="" className={`w-9 h-9 p-2  hover:bg-[#6B6767D1] rounded-full cursor-pointer`} />
-                                    <p className={`text-sm font-bold`}>2.9K</p>
+                            <div className={`flex flex-row rounded-3xl max-w-screen items-center`}>
+                                <div className={`flex flex-row items-center text-[#A49A9AFF] rounded-l-3xl py-2 gap-1`}>
+                                    <img src={`../../assets/icons8-like-96-${isliked?"fill":"normal"}.png`} alt="" className={`w-9 h-9 p-2  hover:bg-[#262626FF] rounded-full cursor-pointer`} onClick={()=> {
+                                        setIsliked(!isliked);setIsDisliked(false);
+                                    }}/>
+                                    <p className={`text-xs`}>2.9K</p>
                                 </div>
                                 <div className={`flex flex-row items-center`}>
                                     <hr className={`w-4 rotate-90`} />
                                 </div>
                                 <div className={`flex flex-row items-center rounded-r-3xl py-2 gap-1`}>
-                                    <p className={`text-sm font-bold`}>2.9K</p>
-                                    <img src={"../../assets/icons8-like-96.png"} alt="" className={`w-9 h-9 p-2 rotate-180 hover:bg-[#6B6767D1] rounded-full cursor-pointer`} />
+                                    <p className={`text-xs `}>2.9K</p>
+                                    <img src={`../../assets/icons8-like-96-${isDisliked?"fill":"normal"}.png`} alt="" className={`w-9 h-9 p-2 rotate-180 hover:bg-[#262626FF] rounded-full cursor-pointer`} onClick={()=> {
+                                        setIsDisliked(!isDisliked);setIsliked(false);
+                                    }}/>
                                 </div>
                                 <button
-                                    className="px-3 py-1 rounded-3xl cursor-pointer text-white text-xs hover:bg-[#6B6767D1] font-semibold"
+                                    className="px-5 py-1 font-semibold h-[35px] rounded-3xl cursor-pointer text-white text-xs hover:bg-[#262626FF]"
                                     disabled={commentText.trim() === ""}
                                 >
                                     Reply

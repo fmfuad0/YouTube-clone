@@ -7,10 +7,10 @@ const Feed = () => {
     return (
         <>
                 <TopBar/>
-            <div className="">
+            <div className="pt-16">
                 <Category/>
             </div>
-            <div className={`pt-21`}>
+            <div>
                 <ListVideos/>
             </div>
             {/*<Category/>*/}
