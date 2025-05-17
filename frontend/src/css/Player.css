@@ -1,16 +1,21 @@
+
 .video-js {
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #000;
     color: #f50000;
+    border-radius: 12px;
+    overflow: hidden;
 }
-
+.video-js:hover + .video-js .vjs-big-play-button {
+    background-color: red;
+}
 .video-js .vjs-control-bar {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.41) !important;
     font-size: 14px;
 }
 
 .video-js .vjs-big-play-button {
-    background-color: #ff0000;
+    background: green;
     border-radius: 50%;
     top: 50% !important;
     left: 50% !important;
@@ -26,7 +31,7 @@
 .video-js .vjs-progress-holder {
     height: 3px;
     border-radius: 3px;
-    background: #444;
+    background: transparent;
 }
 
 .video-js .vjs-play-progress {

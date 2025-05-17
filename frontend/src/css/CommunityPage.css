@@ -1,0 +1,36 @@
+/* Firefox */
+body {
+    scrollbar-color: #ff0000 #111; /* thumb, track */
+    scrollbar-width: thin; /* thin | auto | none */
+}
+
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #111;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 10px;
+    border: 2px solid #111; /* creates some padding around thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #333;
+}
+
+.scrollbar-left {
+    direction: rtl;
+}
+
+.scrollbar-left > * {
+    direction: ltr;
+}
+
+
+

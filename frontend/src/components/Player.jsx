@@ -36,8 +36,9 @@ export const Player = ({ options, onReady }) => {
         <div data-vjs-player>
             <video
                 ref={videoRef}
-                className="video-js vjs-big-play-centered "
-                playsInline
+                className="video-js rounded-xl vjs-big-play-centered"
+                playsInline={true}
+                autoPlay={false}
             />
         </div>
     );

@@ -16,6 +16,9 @@
 }
 
 /* In your global.css or index.css */
+.scrollbar-skyblue::-webkit-scrollbar {
+  scrollbar-base-color: #0000;
+}
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }

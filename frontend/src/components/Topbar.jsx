@@ -8,7 +8,7 @@ const TopBar = () => {
     return (
         <>
             {/* Top Navigation Bar */}
-            <div className="fixed w-full flex items-center justify-between px-4 py-4 bg-[#0f0f0f] text-white z-50">
+            <div className="fixed w-full flex items-center justify-between px-4 py-4 bg-[#0F0F0FFC] text-white z-50">
                 {/* Logo */}
                 <div className="flex items-center ml-15 cursor-pointer  gap-1" onClick={(e)=>navigate("/")}>
                     <img src="../../assets/video.png" className="h-6" alt="logo" />
