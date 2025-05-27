@@ -5,41 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="948d7eec-cc97-4297-9706-42c3dbe321eb" name="Changes" comment="..!..">
-      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-arrow-100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/icons8-arrow-24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/pink-floyd-dp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/sampleVideo.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/shorts-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/shorts-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/shorts-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/shorts-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/shorts-5.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/shorts-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/shorts-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/shorts-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/circle-down-solid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/thumbs-down-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/thumbs-up-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ChannelCommunity.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ListPosts.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ListShorts.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/PostCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/css/CommunityPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/assets/icons8-verify-64.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/icons8-verify-64.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ListComments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ListComments.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ListVideos.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ListVideos.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Player.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Player.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/SuggestedVideos.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/SuggestedVideos.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Topbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Topbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/css/Player.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/css/Player.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/ChannelProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/ChannelProfile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Feed.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Feed.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/VideoPlayer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/VideoPlayer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,24 +46,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Node.js.ListComments.jsx.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/FM Fuad/Desktop/Project Files/YouTube-clone/frontend/src/assets&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.ListComments.jsx.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/FM Fuad/Desktop/Project Files/YouTube-clone",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\FM Fuad\Desktop\Project Files\YouTube-clone\frontend\src\assets" />
@@ -153,6 +119,8 @@
       <workItem from="1747410551647" duration="25875000" />
       <workItem from="1747469294821" duration="9603000" />
       <workItem from="1747489106619" duration="18963000" />
+      <workItem from="1747595646426" duration="1482000" />
+      <workItem from="1748271768971" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <option name="closed" value="true" />
